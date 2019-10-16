@@ -1,11 +1,19 @@
 {
   "name": "nc-messenger",
   "version": "1.0.0",
-  "description": "",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.4",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-scripts": "^3.2.0",
+    "socket.io-client": "^2.3.0"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -17,12 +25,5 @@
   "bugs": {
     "url": "https://github.com/tabal97/nc-messenger/issues"
   },
-  "homepage": "https://github.com/tabal97/nc-messenger#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "socket.io": "^2.3.0"
-  },
-  "devDependencies": {
-    "nodemon": "^1.19.4"
-  }
+  "homepage": "https://github.com/tabal97/nc-messenger#readme"
 }
