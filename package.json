@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/tabal97/nc-messenger/issues"
   },
-  "homepage": "https://github.com/tabal97/nc-messenger#readme"
+  "homepage": "https://github.com/tabal97/nc-messenger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
 }
