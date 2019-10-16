@@ -49,11 +49,22 @@
   <script>
     $(function() {
       var socket = io();
+      $("input").keyup(function(e) {
+        // if (!e.val()) {
+        console.log("change works client");
+        socket.emit("typing", $("#m").val());
+        // }
+        return false;
+      });
       $("form").submit(function(e) {
         e.preventDefault(); // prevents page reloading
         socket.emit("chat message", $("#m").val());
         $("#m").val("");
         return false;
+      });
+      socket.on("sent message", data => {
+        console.log("hello");
+        $("#messages").append(`<li>${data}</li>`);
       });
     });
   </script>
